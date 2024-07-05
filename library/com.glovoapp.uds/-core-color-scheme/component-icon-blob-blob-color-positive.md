@@ -1,0 +1,6 @@
+//[library](../../../index.md)/[com.glovoapp.uds](../index.md)/[CoreColorScheme](index.md)/[componentIconBlobBlobColorPositive](component-icon-blob-blob-color-positive.md)
+
+# componentIconBlobBlobColorPositive
+
+[androidJvm]\
+abstract val [componentIconBlobBlobColorPositive](component-icon-blob-blob-color-positive.md): [Color](https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html)
