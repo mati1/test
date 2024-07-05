@@ -1,0 +1,15 @@
+:root {
+  color-scheme: light dark;
+}
+
+.navigation {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
+.footer {
+    display: none;
+}
