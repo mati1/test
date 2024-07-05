@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>IconButton</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../index.html">
+                            pintxo
+                    </a>
+            </div>
+            <div class="library-version">
+5.43.0            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":uds:library:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="pintxo::com.glovoapp.uds//IconButton/#com.glovoapp.uds.Icon#kotlin.String?#androidx.compose.ui.Modifier#com.glovoapp.uds.IconButtonStyle#com.glovoapp.uds.IconButtonSize#kotlin.Boolean#kotlin.Boolean#androidx.compose.foundation.interaction.MutableInteractionSource#kotlin.Function0[kotlin.Unit]/PointingToDeclaration//608370405">
+  <div class="breadcrumbs"><a href="../../index.html">pintxo</a><span class="delimiter">/</span><a href="index.html">com.glovoapp.uds</a><span class="delimiter">/</span><span class="current">IconButton</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Icon</span><wbr></wbr><span><span>Button</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-icon-button.html"><span class="token function">IconButton</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">icon<span class="token operator">: </span><a href="-icon/index.html">Icon</a><span class="token punctuation">, </span></span><span class="parameter ">contentDescription<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token operator"> = </span>Modifier<span class="token punctuation">, </span></span><span class="parameter ">style<span class="token operator">: </span><a href="-icon-button-style/index.html">IconButtonStyle</a><span class="token operator"> = </span>IconButtonStyle.Primary<span class="token punctuation">, </span></span><span class="parameter ">size<span class="token operator">: </span><a href="-icon-button-size/index.html">IconButtonSize</a><span class="token operator"> = </span>IconButtonSize.Medium<span class="token punctuation">, </span></span><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">loading<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">interactionSource<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/foundation/interaction/MutableInteractionSource.html">MutableInteractionSource</a><span class="token operator"> = </span>remember { MutableInteractionSource() }<span class="token punctuation">, </span></span><span class="parameter ">onClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Design System Icon Button Component</p><p class="paragraph">Icon Button with an <a href="-icon/index.html">Icon</a> or a <span data-unresolved-link="com.glovoapp.uds//CircularProgressIndicator/#com.glovoapp.uds.CircularProgressIndicatorColors/PointingToDeclaration/">CircularProgressIndicator</span> in the center.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>icon</span></span></u></div></span></div><div><div class="title"><p class="paragraph">sets the icon based on <a href="-icon/index.html">Icon</a> to be shown when the button is not in a loading state. Only the foreground resource is used.</p></div></div></div></div><div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>content</span><wbr></wbr><span><span>Description</span></span></u></div></span></div><div><div class="title"><p class="paragraph">optional content description for accessibility.</p></div></div></div></div><div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>modifier</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the modifier is applied to the internal <span data-unresolved-link="com.glovoapp.uds//ButtonSurface/#kotlin.String?#androidx.compose.ui.Modifier#com.glovoapp.uds.ButtonColors#androidx.compose.foundation.layout.PaddingValues#androidx.compose.ui.unit.Dp#kotlin.Boolean#kotlin.Boolean#kotlin.Function0[kotlin.Unit]#androidx.compose.foundation.interaction.MutableInteractionSource#kotlin.Function1[androidx.compose.foundation.layout.RowScope,kotlin.Unit]/PointingToDeclaration/">ButtonSurface</span> usage.</p></div></div></div></div><div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>style</span></span></u></div></span></div><div><div class="title"><p class="paragraph">is used to define the background and other behaviors of each button variant.</p></div></div></div></div><div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>size</span></span></u></div></span></div><div><div class="title"><p class="paragraph"><a href="-icon-button-size/index.html">IconButtonSize</a> is responsible for the size of the button, the icon, padding, and border width.</p></div></div></div></div><div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>enabled</span></span></u></div></span></div><div><div class="title"><p class="paragraph">controls the enabled state of this button. When <code class="lang-kotlin">false</code>, this component will not respond to user input, and it will appear visually disabled and disabled to accessibility services.</p></div></div></div></div><div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>loading</span></span></u></div></span></div><div><div class="title"><p class="paragraph">whether the button is in a loading state. If true, the button will display a circular progress indicator and hide the icon.</p></div></div></div></div><div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>interaction</span><wbr></wbr><span><span>Source</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the <a href="https://developer.android.com/reference/kotlin/androidx/compose/foundation/interaction/MutableInteractionSource.html">MutableInteractionSource</a> representing the stream of <a href="https://developer.android.com/reference/kotlin/androidx/compose/foundation/interaction/Interaction.html">Interaction</a>s for this button. You can create and pass in your own <code class="lang-kotlin">remember</code>ed instance to observe. <a href="https://developer.android.com/reference/kotlin/androidx/compose/foundation/interaction/Interaction.html">Interaction</a>s and customize the appearance/behavior of this button in different states.</p></div></div></div></div><div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span><span>Click</span></span></u></div></span></div><div><div class="title"><p class="paragraph">called when this button is clicked.</p></div></div></div></div></div><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-button-style/index.html"><span>Button</span><wbr></wbr><span><span>Style</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-icon-button-size/index.html"><span>Icon</span><wbr></wbr><span>Button</span><wbr></wbr><span><span>Size</span></span></a></div></span></div><div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewParameter
+import androidx.compose.ui.tooling.preview.PreviewParameterProvider
+import com.glovoapp.uds.IconButton
+import com.glovoapp.uds.IconButtonSize
+import com.glovoapp.uds.CoreIcon
+import com.glovoapp.uds.IconButtonStyle
+import com.glovoapp.uds.icon
+
+fun main() { 
+   //sampleStart 
+   IconButton(
+    icon = CoreIcon.PLUS.icon,
+    contentDescription = &quot;Content description&quot;,
+    style = IconButtonStyle.Primary,
+    size = IconButtonSize.Large,
+    onClick = {}
+) 
+   //sampleEnd
+}</code></pre></div><hr><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-icon-button.html"><span class="token function"><strike>IconButton</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">icon<span class="token operator">: </span><a href="-icon/index.html">Icon</a><span class="token punctuation">, </span></span><span class="parameter ">contentDescription<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token operator"> = </span>Modifier<span class="token punctuation">, </span></span><span class="parameter ">colors<span class="token operator">: </span><a href="-button-colors/index.html">ButtonColors</a><span class="token punctuation">, </span></span><span class="parameter ">sizes<span class="token operator">: </span><a href="-icon-button-sizes/index.html">IconButtonSizes</a><span class="token punctuation">, </span></span><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">loading<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">interactionSource<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/foundation/interaction/MutableInteractionSource.html">MutableInteractionSource</a><span class="token operator"> = </span>remember { MutableInteractionSource() }<span class="token punctuation">, </span></span><span class="parameter ">onClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="deprecation-content"><h3 class="">Deprecated</h3><p class="paragraph">Prefer to use IconButton with an `IconButtonStyle` and a `IconButtonSize`</p></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CoreTypography</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            library
+                    </a>
+            </div>
+            <div class="library-version">
+5.43.0            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":uds:library:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="library::com.glovoapp.uds/CoreTypography///PointingToDeclaration//608370405">
+  <div class="breadcrumbs"><a href="../../../index.html">library</a><span class="delimiter">/</span><a href="../index.html">com.glovoapp.uds</a><span class="delimiter">/</span><span class="current">CoreTypography</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Core</span><wbr></wbr><span><span>Typography</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">CoreTypography</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>feature1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs64.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh72.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>feature2<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs49.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh52.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>feature3<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs37.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh40.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>title1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs28.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh32.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>title2<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs24.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh28.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>title3<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs21.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh24.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>callout1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs16.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>callout2<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs14.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>callout3<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs12.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh16.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>body1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs16.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Book,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>body1Emphasis<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs16.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Medium,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>body2<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs14.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Book,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>body2Emphasis<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs14.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Medium,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>caption<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs12.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh16.sp,
+        fontWeight = CoreFontWeight.Book,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>captionEmphasis<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs12.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh16.sp,
+        fontWeight = CoreFontWeight.Medium,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>captionLink<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs12.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh16.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+        textDecoration = TextDecoration.Underline,
+    )</span></span><span class="token punctuation">)</span></div><p class="paragraph">Design System Typography</p><p class="paragraph">This class is used to define the text styles of the <span data-unresolved-link="com.glovoapp.uds/CoreTheme///PointingToDeclaration/">CoreTheme</span>.</p><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import androidx.compose.foundation.text.BasicText
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewParameter
+import androidx.compose.ui.tooling.preview.PreviewParameterProvider
+import com.glovoapp.uds.CoreTheme
+
+fun main() { 
+   //sampleStart 
+   BasicText(
+    text = &quot;Hello, World!&quot;,
+    style = CoreTheme.typography.body1
+) 
+   //sampleEnd
+}</code></pre></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="327732643%2FConstructors%2F608370405" anchor-label="CoreTypography" id="327732643%2FConstructors%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-core-typography.html"><span>Core</span><wbr></wbr><span><span>Typography</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="327732643%2FConstructors%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">feature1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs64.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh72.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">feature2<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs49.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh52.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">feature3<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs37.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh40.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">title1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs28.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh32.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">title2<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs24.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh28.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">title3<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs21.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh24.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">callout1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs16.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">callout2<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs14.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">callout3<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs12.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh16.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">body1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs16.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Book,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">body1Emphasis<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs16.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Medium,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">body2<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs14.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Book,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">body2Emphasis<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs14.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh20.sp,
+        fontWeight = CoreFontWeight.Medium,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">caption<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs12.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh16.sp,
+        fontWeight = CoreFontWeight.Book,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">captionEmphasis<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs12.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh16.sp,
+        fontWeight = CoreFontWeight.Medium,
+        lineHeightStyle = DefaultLineHeightStyle,
+    )<span class="token punctuation">, </span></span><span class="parameter ">captionLink<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+        fontFamily = CoreFontFamily,
+        fontSize = CorePrimitive.textPropertiesFontSizeFs12.sp,
+        lineHeight = CorePrimitive.textPropertiesLineHeightLh16.sp,
+        fontWeight = CoreFontWeight.Bold,
+        lineHeightStyle = DefaultLineHeightStyle,
+        textDecoration = TextDecoration.Underline,
+    )</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="678944289%2FProperties%2F608370405" anchor-label="body1" id="678944289%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="body1.html"><span><span>body1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="678944289%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="body1.html">body1</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used for most text in the product</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1947437061%2FProperties%2F608370405" anchor-label="body1Emphasis" id="1947437061%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="body1-emphasis.html"><span><span>body1Emphasis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1947437061%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="body1-emphasis.html">body1Emphasis</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used to highlight a word, number or short phrase in the same hierarchy as body1</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="709964096%2FProperties%2F608370405" anchor-label="body2" id="709964096%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="body2.html"><span><span>body2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="709964096%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="body2.html">body2</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used as a smaller alternative to most text. Ideal for table content or other high density layouts</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1322038236%2FProperties%2F608370405" anchor-label="body2Emphasis" id="-1322038236%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="body2-emphasis.html"><span><span>body2Emphasis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1322038236%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="body2-emphasis.html">body2Emphasis</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used to highlight a word, number or short phrase in the same hierarchy as body2</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1079075415%2FProperties%2F608370405" anchor-label="callout1" id="-1079075415%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="callout1.html"><span><span>callout1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1079075415%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="callout1.html">callout1</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used for large subheading or call-to-action</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1048055608%2FProperties%2F608370405" anchor-label="callout2" id="-1048055608%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="callout2.html"><span><span>callout2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1048055608%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="callout2.html">callout2</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used for medium subheading or call-to-action</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1017035801%2FProperties%2F608370405" anchor-label="callout3" id="-1017035801%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="callout3.html"><span><span>callout3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1017035801%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="callout3.html">callout3</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used for small subheading or call-to-action</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-242069974%2FProperties%2F608370405" anchor-label="caption" id="-242069974%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="caption.html"><span><span>caption</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-242069974%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="caption.html">caption</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used as a smallest text size to be used sparingly</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1440358642%2FProperties%2F608370405" anchor-label="captionEmphasis" id="-1440358642%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="caption-emphasis.html"><span>caption</span><wbr></wbr><span><span>Emphasis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1440358642%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="caption-emphasis.html">captionEmphasis</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used to highlight a word, number or short phrase in the same hierarchy as caption</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1447828688%2FProperties%2F608370405" anchor-label="captionLink" id="1447828688%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="caption-link.html"><span>caption</span><wbr></wbr><span><span>Link</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1447828688%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="caption-link.html">captionLink</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used for hyperlinks</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1124588783%2FProperties%2F608370405" anchor-label="feature1" id="1124588783%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="feature1.html"><span><span>feature1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1124588783%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="feature1.html">feature1</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used to highlight a huge word, number, or short phrase (use sparingly)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1155608590%2FProperties%2F608370405" anchor-label="feature2" id="1155608590%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="feature2.html"><span><span>feature2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1155608590%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="feature2.html">feature2</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used to highlight a very large word, number, or short phrase</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1186628397%2FProperties%2F608370405" anchor-label="feature3" id="1186628397%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="feature3.html"><span><span>feature3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1186628397%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="feature3.html">feature3</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used to highlight a large word, number, or short phrase</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1023540497%2FProperties%2F608370405" anchor-label="title1" id="1023540497%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title1.html"><span><span>title1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1023540497%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="title1.html">title1</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used for large title</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1054560304%2FProperties%2F608370405" anchor-label="title2" id="1054560304%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title2.html"><span><span>title2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1054560304%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="title2.html">title2</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used for medium title</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1085580111%2FProperties%2F608370405" anchor-label="title3" id="1085580111%2FProperties%2F608370405" data-filterable-set=":uds:library:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":uds:library:dokkaHtml/release" data-filterable-set=":uds:library:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title3.html"><span><span>title3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1085580111%2FProperties%2F608370405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":uds:library:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="title3.html">title3</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a></div><div class="brief "><p class="paragraph">Used for small title</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
