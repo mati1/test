@@ -10,8 +10,11 @@
     if (window.top != window.self) {
         document.getElementsByTagName("html")[0].classList.add("in-iframe")
         document.getElementsByTagName("html")[0].classList.remove("theme-dark")
-        for (const link of document.querySelectorAll('a')) {
-            link.target = "_blank";
+        window.onload = function(){
+            var anchors = document.getElementsByTagName('a');
+            for (var i=0; i<anchors.length; i++){
+                anchors[i].setAttribute('target', '_blank');
+            }
         }
     } else {
         const storage = localStorage.getItem("dokka-dark-mode")
