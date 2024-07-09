@@ -9,6 +9,23 @@
     <script>
     if (window.top != window.self) {
         document.getElementsByTagName("html")[0].classList.add("in-iframe")
+        document.getElementsByTagName("html")[0].classList.remove("theme-dark")
+        for (const link of document.querySelectorAll('a')) {
+            link.target = "_blank";
+        }
+    } else {
+        const storage = localStorage.getItem("dokka-dark-mode")
+        if (storage == null) {
+            const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+            if (osDarkSchemePreferred === true) {
+                document.getElementsByTagName("html")[0].classList.add("theme-dark")
+            }
+        } else {
+            const savedDarkMode = JSON.parse(storage)
+            if (savedDarkMode === true) {
+                document.getElementsByTagName("html")[0].classList.add("theme-dark")
+            }
+        }
     }
     </script>
 <script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
