@@ -1,0 +1,19 @@
+.in-iframe .cover {
+    display: none;
+}
+
+.in-iframe .navigation{
+    display: none;
+}
+
+.in-iframe .breadcrumbs {
+    display: none;
+}
+
+.in-iframe .footer {
+    display: none;
+}
+
+.in-iframe sidebar {
+    display: none;
+}
